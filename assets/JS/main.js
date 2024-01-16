@@ -1,11 +1,8 @@
-//Consegna
-//L'utente clicca su un bottone che genererà una griglia di gioco quadrata. Ogni cella ha un numero progressivo, da 1 a 100. Ci saranno quindi 10 caselle per ognuna delle 10 righe.Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
-
 const gridHtml = document.getElementById("game")
 const btnGame = document.getElementById("button")
 
-// btnGame.addEventListener("click", function(){
-    // gridHtml.classList.add("gridDisplay")
+btnGame.addEventListener("click", function(){
+    gridHtml.classList.add("gridDisplay")
 
     for (let i = 1; i <= 100; i++){
         let cell = document.createElement("div")
@@ -16,10 +13,11 @@ const btnGame = document.getElementById("button")
 
         cell.addEventListener("click", function(){
             this.classList.toggle("blue")
+
+            console.log(`Il numero uscito è: ${i}`)
         })
     
         gridHtml.append(cell)
     }
-    
-
-// })
+    return
+})
