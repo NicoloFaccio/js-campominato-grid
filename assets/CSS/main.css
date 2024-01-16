@@ -29,7 +29,7 @@ body {
     height: 7vh;
 }
 
-.button {
+#button {
     padding-inline: 20px;
     cursor: pointer;
 }
@@ -42,16 +42,18 @@ main {
     justify-content: center;
 }
 
-.game {
+#game {
     border: 1px solid black ;
     
     display: flex;
     flex-wrap: wrap;
 
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
 
-    display: none;
+    margin-block: 20px;
+
+    /* display: none; */
 }
 
 .gridDisplay {
@@ -67,9 +69,10 @@ main {
     justify-content: center;
     align-items: center;
 
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .blue {
     background-color: rgba(13, 95, 172, 1);
+    color: white;
 }
