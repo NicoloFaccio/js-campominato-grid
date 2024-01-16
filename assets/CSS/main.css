@@ -1,7 +1,12 @@
+/* GENERAL CLASSES */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -11,6 +16,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* CLASSES OF THE HEADER AND FOOTER */
 
 .back-white{
     display: flex;
@@ -25,4 +32,38 @@ body {
 .button {
     padding-inline: 20px;
     cursor: pointer;
+}
+
+/* CLASSES OF THE MAIN */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    border: 1px solid black ;
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+    width: 70%;
+}
+
+.cell {
+    flex-basis: calc(100% / 10);
+    aspect-ratio: 1;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+}
+
+.blue {
+    background-color: rgba(13, 95, 172, 1);
 }
