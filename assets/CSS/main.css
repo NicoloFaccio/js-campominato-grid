@@ -50,6 +50,12 @@ main {
 
     margin: 0 auto;
     width: 70%;
+
+    display: none;
+}
+
+.gridDisplay {
+    display: block;
 }
 
 .cell {
